@@ -1,6 +1,7 @@
 # PixiPlay - Mini Games Platform
 
 PixiPlay is a web-based mini games platform built using **React**, **Spring Boot**, and **PostgreSQL**. It provides users with an engaging gaming experience through classic games, user authentication, score tracking, leaderboards, and a fun pixel-themed interface.
+
 ---
 
 ## Features
@@ -72,14 +73,14 @@ Main Tables
 
 | Game | Status |
 |------|--------|
-| Snake | ✅ Completed |
-| Sudoku | ✅ Completed |
-| Daily Trivia | ✅ Completed |
-| 2048 | 🚧 Planned |
+| Snake | Completed |
+| Sudoku | Completed |
+| Daily Trivia | Completed |
+| 2048 | Planned |
 
 ---
 
-## 🔮 Future Enhancements
+## Future Enhancements
 
 - 2048 Game
 - Leaderboard Page
@@ -95,6 +96,6 @@ Developed as a Mini Games Platform project using React, Spring Boot, and Postgre
 
 ---
 
-## 📜 License
+## License
 
 This project is created for educational purposes.
