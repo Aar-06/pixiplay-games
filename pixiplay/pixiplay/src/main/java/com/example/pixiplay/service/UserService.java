@@ -21,7 +21,7 @@ public class UserService {
         }
 
         user.setAvatarUrl(
-                "https://api.dicebear.com/9.x/adventurer/svg?seed="
+                "https://api.dicebear.com/9.x/pixel-art/svg?seed="
                         + user.getUsername()
         );
 

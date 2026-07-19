@@ -1,0 +1,86 @@
+.dashboard-page{
+    min-height:100vh;
+    background:#FFF7E8;
+    position:relative;
+    overflow-x:hidden;
+    z-index:2; 
+}
+.dashboard-header{
+    width:min(1200px,92%);
+    margin:40px auto;
+}
+
+.dashboard-header h1{
+    font-family:"Press Start 2P";
+    color:#4B4453;
+    font-size:34px;
+    margin-bottom:15px;
+}
+
+.dashboard-header p{
+    font-family:"Pixelify Sans";
+    font-size:26px;
+    color:#666;
+}
+
+.games-section{
+    width:min(1200px,92%);
+    margin:auto;
+    display:flex;
+    justify-content:space-between;
+    gap:30px;
+    flex-wrap:wrap;
+}
+.trivia-section {
+    width: 90%;
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 24px;
+    background: white;
+    border-radius: 18px;
+    box-shadow: 0 8px 20px rgba(0,0,0,.08);
+}
+
+.trivia-section h2 {
+    margin-bottom: 15px;
+}
+
+.trivia-question {
+    font-size: 18px;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+.trivia-options {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 15px;
+}
+
+.trivia-option {
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    background: #c8b6ff;
+    color: white;
+    font-weight: bold;
+}
+
+.trivia-option:hover {
+    opacity: 0.9;
+}
+
+.correct-answer {
+    color: #2e7d32;
+    font-weight: bold;
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+.wrong-answer {
+    color: #d32f2f;
+    font-weight: bold;
+    margin-top: 20px;
+    font-size: 18px;
+}

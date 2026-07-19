@@ -1,0 +1,56 @@
+.snake-container{
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    margin-top:40px;
+}
+
+.snake-container h1{
+
+    font-family:"Press Start 2P";
+
+    margin-bottom:25px;
+}
+
+.board{
+    display:grid;
+
+    grid-template-columns:repeat(20,17px);
+    grid-template-rows:repeat(20,17px);
+
+    gap:1px;
+
+    padding:8px;
+
+    background:#B8D98C;
+    border-radius: 10px;
+    border: 5px solid #7A9E33
+}
+
+.cell{
+
+    width:17px;
+    height:17px;
+    background:#DCE8C3;
+}
+
+.snake{
+    background:#356A2A;
+}
+
+.food{
+
+    background:#FF4D6D;
+    border-radius:50%;
+}
+
+.snake-container h2{
+
+    margin-bottom:20px;
+
+    font-family:"Pixelify Sans";
+}
