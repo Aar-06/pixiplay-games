@@ -16,7 +16,7 @@
     margin-bottom:25px;
 }
 
-.board{
+.snake-board{
     display:grid;
 
     grid-template-columns:repeat(20,17px);
@@ -31,7 +31,7 @@
     border: 5px solid #7A9E33
 }
 
-.cell{
+.snake-cell{
 
     width:17px;
     height:17px;

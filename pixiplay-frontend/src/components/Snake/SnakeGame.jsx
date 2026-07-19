@@ -198,7 +198,7 @@ function SnakeGame({ onScoreChange, onTimeChange, paused}) {
 
     return (
         <div className="snake-container">
-            <div className="board">
+            <div className="snake-board">
                 {Array.from({ length: GRID_SIZE * GRID_SIZE }).map((_, index) => {
 
                     const x = index % GRID_SIZE;
@@ -214,7 +214,7 @@ function SnakeGame({ onScoreChange, onTimeChange, paused}) {
 
                         <div
                             key={index}
-                            className={`cell 
+                            className={`snake-cell 
                                 ${isSnake ? "snake" : ""}
                                 ${isFood ? "food" : ""}
                                 `}

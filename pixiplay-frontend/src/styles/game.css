@@ -31,6 +31,8 @@
 .game-title {
     font-family: "Press Start 2P";
     font-size: 28px;
+    color:#FFD166;
+    text-shadow:3px 3px #5E548E;
 }
 
 .current-score {

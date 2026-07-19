@@ -2,6 +2,7 @@ import { useNavigate, useParams } from "react-router-dom";
 import { useState } from "react";
 import BackgroundDecorations from "../components/BackgroundDecorations";
 import SnakeGame from "../components/Snake/SnakeGame";
+import SudokuGame from "../components/Sudoku/SudokuGame";
 
 import "../styles/game.css";
 
@@ -17,6 +18,36 @@ function Game() {
     const [paused, setPaused] = useState(false);
     const [gameOver, setGameOver] = useState(false);
     const [restartKey, setRestartKey] = useState(0);
+
+    let gameComponent = null;
+
+    switch (gameName) {
+        case "snake":
+            gameComponent = (
+                <SnakeGame
+                    key={restartKey}
+                    onScoreChange={setCurrentScore}
+                    onTimeChange={setTime}
+                    paused={paused}
+                />
+            );
+            break;
+
+        case "sudoku":
+            gameComponent = (
+                <SudokuGame
+                    key={restartKey}
+                />
+            );
+            break;
+
+        default:
+            gameComponent = (
+                <h2 style={{ color: "white" }}>
+                    Game not found
+                </h2>
+            );
+    }
 
     return (
         <>
@@ -43,18 +74,7 @@ function Game() {
                 </div>
 
                 <div className="game-window">
-
-                    {
-                        gameName === "snake" &&
-
-                        <SnakeGame
-                            key={restartKey}
-                            onScoreChange = {setCurrentScore}
-                            onTimeChange={setTime}
-                            paused={paused}
-                        />
-                    }
-
+                    {gameComponent}
                 </div>
 
                 <div className="stats-row">

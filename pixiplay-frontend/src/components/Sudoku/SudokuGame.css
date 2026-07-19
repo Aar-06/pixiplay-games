@@ -1,0 +1,135 @@
+.sudoku-container{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    color:white;
+    font-family:'Press Start 2P', monospace;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(9,48px);
+    gap:2px;
+
+    padding:12px;
+
+    background:#6C5CE7;
+    border:6px solid #4834D4;
+    border-radius:14px;
+
+    box-shadow:
+        0 8px #3F37C9,
+        0 0 25px rgba(255,255,255,.15);
+}
+.cell{
+
+    width:48px;
+    height:48px;
+
+    border:none;
+
+    background:#FFF6D6;
+
+    color:#5E548E;
+
+    text-align:center;
+
+    font-size:22px;
+
+    font-weight:bold;
+
+    outline:none;
+
+    transition:.15s;
+
+}
+.cell:hover{
+
+    background:#FFEAA7;
+    transform:translateY(-2px);
+
+}
+.cell:focus{
+
+    background:#A29BFE;
+
+    color:white;
+
+}
+.cell:read-only{
+
+    background:#B8F2E6;
+
+    color:#2D3142;
+
+    font-weight:900;
+
+}
+.right-border{
+
+    border-right:4px solid #4834D4;
+
+}
+
+.bottom-border{
+
+    border-bottom:4px solid #4834D4;
+
+}
+.sudoku-container button{
+
+    margin-top:20px;
+
+    padding:12px 26px;
+
+    border:none;
+
+    background:#FF6B81;
+
+    color:white;
+
+    border-radius:12px;
+
+    cursor:pointer;
+
+    font-weight:bold;
+
+    font-size:16px;
+    box-shadow:0 5px #E84393;
+    display: flex;
+
+}
+
+.sudoku-container button:hover{
+
+    transform:translateY(-2px);
+
+}
+.button-row{
+    display:flex;
+    gap:20px;
+    justify-content:center;
+    margin-top:25px;
+}
+
+.button-row button{
+    padding:12px 24px;
+    border:none;
+    border-radius:12px;
+    background:#FF6B81;
+    color:white;
+    cursor:pointer;
+    font-family:'Press Start 2P', monospace;
+    font-size:12px;
+    box-shadow:0 5px #E84393;
+    transition:0.2s;
+}
+
+.button-row button:hover{
+    transform:translateY(-2px);
+}
+
+.button-row button:active{
+    transform:translateY(2px);
+    box-shadow:0 2px #E84393;
+}
